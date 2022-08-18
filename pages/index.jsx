@@ -18,7 +18,7 @@ export default function Home() {
 
         <p className={styles.description}>
           Get started by editing{' '}
-          <code className={styles.code}>pages/index.jsx</code>
+          <code className={`${styles.code} text-white`}>pages/index.jsx</code>
         </p>
 
         <div className={styles.grid}>
@@ -59,8 +59,14 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+          <span className="flex justify-center items-center px-3 py-2 rounded-md text-white mx-1">
+            <Image
+              className="text-white"
+              src="/vercel.svg"
+              alt="Vercel Logo"
+              width={72}
+              height={16}
+            />
           </span>
         </a>
       </footer>
